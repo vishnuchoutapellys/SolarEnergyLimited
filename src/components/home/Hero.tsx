@@ -7,18 +7,18 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   const whatsappUrl = "https://wa.me/919014249898?text=Hi!%20I'm%20interested%20in%20a%20solar%20installation%20for%20my%20property.%20Please%20provide%20more%20information.";
-
+  /** vishnu is working on this development branch */
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden bg-solar-blue-dark">
       {/* Background Image with animated parallax overlay */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-[url('/images/hero_background.png')] scale-105"
         style={{
           transform: "translateZ(0)",
         }}
       />
       <div className="absolute inset-0 bg-gradient-to-r from-solar-blue-dark/95 via-solar-blue-dark/85 to-transparent" />
-      
+
       {/* Sun/Light Ray decoration effect */}
       <div className="absolute -top-40 -left-40 w-96 h-96 bg-solar-orange/15 rounded-full blur-3xl" />
       <div className="absolute top-1/3 right-10 w-80 h-80 bg-solar-blue-light/10 rounded-full blur-3xl" />
@@ -119,7 +119,7 @@ export default function Hero() {
           </motion.div>
         </div>
       </div>
-      
+
       {/* Down arrow indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce hidden md:block z-10">
         <Link href="#stats" className="text-white/40 hover:text-white/80 transition-colors">
