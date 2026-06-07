@@ -20,7 +20,7 @@ export default function Contact() {
             Get In Touch
           </span>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-heading tracking-tight text-glow">
-            Contact Rudra Solar Energy
+            Contact Rudraa Solar Power
           </h1>
           <p className="text-slate-300 text-xs sm:text-sm max-w-xl mx-auto leading-relaxed">
             Have questions about subsidies, EMI options, or panel layouts? Get in touch with our experts now.
@@ -31,7 +31,7 @@ export default function Contact() {
       {/* Main Info Block */}
       <section className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          
+
           {/* Info Side */}
           <div className="lg:col-span-5 space-y-8">
             <div>
@@ -45,7 +45,7 @@ export default function Contact() {
 
             {/* Address Cards */}
             <div className="space-y-6">
-              
+
               {/* Address */}
               <div className="flex gap-4 items-start">
                 <div className="w-11 h-11 rounded-xl bg-solar-orange/10 flex items-center justify-center text-solar-orange shrink-0 mt-0.5 border border-solar-orange/10">
@@ -83,8 +83,8 @@ export default function Contact() {
                 <div>
                   <h3 className="font-bold text-sm text-slate-900 font-heading">Email Address</h3>
                   <p className="text-xs text-slate-500 leading-relaxed mt-1 font-medium">
-                    <a href="mailto:rudrasolarenergypvtlimited@gmail.com" className="hover:text-solar-orange transition-colors break-all">
-                      rudrasolarenergypvtlimited@gmail.com
+                    <a href="mailto:rudraasolarpowerpvtltd@gmail.com" className="hover:text-solar-orange transition-colors break-all">
+                      rudraasolarpowerpvtltd@gmail.com
                     </a>
                   </p>
                 </div>
@@ -147,7 +147,7 @@ export default function Contact() {
           allowFullScreen={true}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          title="Rudra Solar Energy Location Map"
+          title="Rudraa Solar Power Location Map"
         />
       </section>
     </div>

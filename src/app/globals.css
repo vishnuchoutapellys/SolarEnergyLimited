@@ -2,56 +2,103 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ─────────────────────────────────────────────────────────────
+   DESIGN TOKENS  (clamp-based responsive typography)
+───────────────────────────────────────────────────────────── */
 :root {
   --background: #ffffff;
-  --foreground: #0f172a; /* Slate 900 */
+  --foreground: #0f172a;
+
+  /* Typography scale */
+  --text-h1:   clamp(1.8rem, 5vw, 3.5rem);
+  --text-h2:   clamp(1.5rem, 4vw, 2.5rem);
+  --text-h3:   clamp(1.15rem, 3vw, 1.75rem);
+  --text-body: clamp(0.875rem, 2vw, 1rem);
+  --text-sm:   clamp(0.78rem, 1.5vw, 0.9rem);
+
+  /* Spacing scale */
+  --section-py-sm:  clamp(2.5rem, 6vw, 4rem);   /* mobile */
+  --section-py-lg:  clamp(4rem,   8vw, 7rem);   /* desktop */
 }
 
+/* ─────────────────────────────────────────────────────────────
+   BASE RESETS
+───────────────────────────────────────────────────────────── */
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
   overflow-x: hidden;
+  font-size: var(--text-body);
+  line-height: 1.65;
 }
 
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
+/* Prevent all images from overflowing their container */
+img, video, canvas, svg {
+  max-width: 100%;
 }
 
-::-webkit-scrollbar-track {
-  background: #f8fafc;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #f97316; /* Brand orange thumb on hover */
-}
-
-/* Custom Utility Classes */
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+/* Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
-  
+}
+
+/* ─────────────────────────────────────────────────────────────
+   CUSTOM SCROLLBAR
+───────────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f8fafc; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #f97316; }
+
+/* ─────────────────────────────────────────────────────────────
+   UTILITY CLASSES
+───────────────────────────────────────────────────────────── */
+@layer utilities {
+  /* ── Text ── */
+  .text-balance { text-wrap: balance; }
+
+  .text-h1 { font-size: var(--text-h1); }
+  .text-h2 { font-size: var(--text-h2); }
+  .text-h3 { font-size: var(--text-h3); }
+  .text-body { font-size: var(--text-body); }
+  .text-sm-clamp { font-size: var(--text-sm); }
+
+  /* ── Section spacing ── */
+  .section-py {
+    padding-top: var(--section-py-sm);
+    padding-bottom: var(--section-py-sm);
+  }
+  @media (min-width: 768px) {
+    .section-py {
+      padding-top: var(--section-py-lg);
+      padding-bottom: var(--section-py-lg);
+    }
+  }
+
+  /* ── Patterns ── */
   .bg-grid-pattern {
     background-size: 40px 40px;
-    background-image: 
+    background-image:
       linear-gradient(to right, rgba(15, 23, 42, 0.05) 1px, transparent 1px),
       linear-gradient(to bottom, rgba(15, 23, 42, 0.05) 1px, transparent 1px);
   }
 
+  /* ── Glows ── */
   .text-glow {
     text-shadow: 0 0 12px rgba(249, 115, 22, 0.4);
   }
 
+  /* ── Glassmorphism ── */
   .glass-card {
     background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(12px);
@@ -65,4 +112,39 @@ body {
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.08);
   }
+
+  /* ── Animations ── */
+  .animate-fade-in {
+    animation: fadeIn 0.4s ease both;
+  }
+  .animate-fade-in-up {
+    animation: fadeInUp 0.45s ease both;
+  }
+  .animate-scale-in {
+    animation: scaleIn 0.3s ease both;
+  }
+
+  /* ── Touch target helper ── */
+  .touch-target {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   KEYFRAMES
+───────────────────────────────────────────────────────────── */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
 }
