@@ -32,13 +32,13 @@ export default function ServicesPage() {
       {/* Extended technical specifications banner */}
       <section className="py-20 bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
+
           <div className="lg:col-span-6 space-y-6">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-solar-blue font-heading tracking-tight">
               Solar Tech & Components We Deploy
             </h2>
             <p className="text-sm text-slate-600 leading-relaxed font-medium">
-              At Rudra Solar Energy, we source and install state-of-the-art monocrystalline PERC solar panels and smart grid-tied string inverters from leading global manufacturers.
+              At Rudraa Solar Power, we source and install state-of-the-art monocrystalline PERC solar panels and smart grid-tied string inverters from leading global manufacturers.
             </p>
 
             <div className="space-y-4">

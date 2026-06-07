@@ -1,12 +1,12 @@
 export const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "SolarEnergySystemBusiness",
-  "name": "Rudra Solar Energy Private Limited",
+  "name": "Rudraa solar power private limited",
   "image": "https://rudrasolarenergy.com/Logo1.png", // Fallback URL
   "@id": "https://rudrasolarenergy.com/#organization",
   "url": "https://rudrasolarenergy.com",
   "telephone": "+919014249898",
-  "email": "rudrasolarenergypvtlimited@gmail.com",
+  "email": "rudraasolarpowerpvtltd@gmail.com",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "D.No. 4-1-558/9, Korutla",
@@ -42,7 +42,7 @@ export const localBusinessSchema = {
 export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "Rudra Solar Energy Private Limited",
+  "name": "Rudraa solar power private limited",
   "url": "https://rudrasolarenergy.com",
   "logo": "https://rudrasolarenergy.com/Logo1.png",
   "contactPoint": {

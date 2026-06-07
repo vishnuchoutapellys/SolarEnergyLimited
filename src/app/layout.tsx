@@ -24,9 +24,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Best Solar Panel Installation Company in Telangana | Rudra Solar Energy",
-  description: "Switch to solar with Rudra Solar Energy Private Limited! We provide premium rooftop solar panel installations for homes, commercial businesses, and industries in Korutla, Jagityal, and across Telangana. 25-year panel warranty, 10-year inverter warranty, and 5 years free service support. Bank loan & EMI assistance available. Get your free solar quote today!",
-  keywords: ["solar panels telangana", "rooftop solar panels", "solar installer korutla", "solar panel installation jagityal", "rudra solar energy", "solar energy solutions india", "best solar company telangana", "solar panel price subsidy"],
+  title: "Rudraa Solar Power | Best Solar Panel Installation Company in Telangana",
+  description: "Switch to solar with Rudraa solar power private limited! We provide premium rooftop solar panel installations for homes, commercial businesses, and industries in Korutla, Jagityal, and across Telangana. 25-year panel warranty, 10-year inverter warranty, and 5 years free service support. Bank loan & EMI assistance available. Get your free solar quote today!",
+  keywords: ["solar panels telangana", "rooftop solar panels", "solar installer korutla", "solar panel installation jagityal", "Rudraa Solar Power", "solar energy solutions india", "best solar company telangana", "solar panel price subsidy"],
   metadataBase: new URL("https://rudrasolarenergy.com"), // Fallback URL
   alternates: {
     canonical: "/",
@@ -35,21 +35,21 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://rudrasolarenergy.com",
-    title: "Rudra Solar Energy Private Limited | Premium Solar Installer in Telangana",
-    description: "Switch to solar with Rudra Solar Energy! Get premium rooftop solar panel installations for homes and businesses with 25-year warranty, EMI options, and 5 years free service support.",
-    siteName: "Rudra Solar Energy",
+    title: "Rudraa solar power private limited | Premium Solar Installer in Telangana",
+    description: "Switch to solar with Rudraa Solar Power! Get premium rooftop solar panel installations for homes and businesses with 25-year warranty, EMI options, and 5 years free service support.",
+    siteName: "Rudraa Solar Power",
     images: [
       {
         url: "/Logo1.png",
         width: 800,
         height: 600,
-        alt: "Rudra Solar Energy Logo",
+        alt: "Rudraa Solar Power Logo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rudra Solar Energy Private Limited | Premium Solar Installer",
+    title: "Rudraa solar power private limited | Premium Solar Installer",
     description: "Get premium rooftop solar panel installations for homes and businesses with 25-year warranty, EMI options, and 5 years free service support in Telangana.",
     images: ["/Logo1.png"],
   },

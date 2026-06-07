@@ -35,7 +35,7 @@ export default function About() {
             Who We Are
           </span>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-heading tracking-tight text-glow">
-            About Rudra Solar Energy
+            About Rudraa Solar Power
           </h1>
           <p className="text-slate-300 text-xs sm:text-sm max-w-xl mx-auto leading-relaxed">
             Pioneering sustainable and reliable clean solar energy solutions across Telangana to reduce carbon footprints and cut utility bills.
@@ -50,7 +50,7 @@ export default function About() {
           <div className="lg:col-span-5 relative h-[450px] w-full rounded-2xl overflow-hidden shadow-xl border border-slate-100 bg-slate-100">
             <Image
               src="/images/consultation_solar.png"
-              alt="Rudra Solar Consulting Team"
+              alt="RudraaSolar Consulting Team"
               fill
               className="object-cover"
             />
@@ -61,9 +61,9 @@ export default function About() {
             <h2 className="text-2xl sm:text-3xl font-extrabold text-solar-blue font-heading tracking-tight leading-tight">
               Powering a Clean & Sustainable Future
             </h2>
-            
+
             <p className="text-sm text-slate-600 leading-relaxed font-medium">
-              Rudra Solar Energy Private Limited is one of Telangana's premier solar installation and consultation firms. Based in Korutla, Jagityal, we serve residential, commercial, and industrial clients with tailored rooftop solar setups designed to maximize power yields and optimize ROI.
+              Rudraa solar power private limited is one of Telangana's premier solar installation and consultation firms. Based in Korutla, Jagityal, we serve residential, commercial, and industrial clients with tailored rooftop solar setups designed to maximize power yields and optimize ROI.
             </p>
 
             <p className="text-sm text-slate-600 leading-relaxed font-medium">
@@ -129,11 +129,11 @@ export default function About() {
       <section className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-gradient-to-br from-solar-blue to-solar-blue-light text-white rounded-2xl p-8 md:p-12 shadow-xl grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-solar-orange/10 rounded-full blur-2xl" />
-          
+
           <div className="lg:col-span-8 space-y-4 relative z-10">
             <h2 className="text-2xl md:text-3xl font-extrabold font-heading">Our Quality Commitment</h2>
             <p className="text-slate-200 text-xs sm:text-sm leading-relaxed font-medium">
-              Rudra Solar Energy Private Limited ensures every installation complies with international electrical and safety guidelines. We perform comprehensive quality audits on earthing, surge protection, structure alignment, and net metering connectivity.
+              Rudraa solar power private limited ensures every installation complies with international electrical and safety guidelines. We perform comprehensive quality audits on earthing, surge protection, structure alignment, and net metering connectivity.
             </p>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
               {[
