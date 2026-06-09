@@ -20,7 +20,7 @@ export default function VideoSection() {
     {
       title: "Benefits of Solar Energy",
       description: "A comprehensive look at the financial, ecological, and economic advantages of adopting clean solar energy.",
-      thumbnail: "/images/residential_solar.png",
+      thumbnail: "/images/customer2.jpg",
       videoUrl: "https://www.w3schools.com/html/movie.mp4",
     },
     {

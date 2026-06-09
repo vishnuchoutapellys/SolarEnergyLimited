@@ -13,7 +13,7 @@ export default function GalleryPage() {
         <div className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-[url('/images/hero_background.png')] opacity-15 scale-105" />
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
           <span className="text-solar-orange font-bold text-xs uppercase tracking-widest bg-solar-orange/20 px-3.5 py-1.5 rounded-full">
-            Our Portfolio
+            Our Happy Customer's
           </span>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-heading tracking-tight text-glow">
             Recent Projects Gallery

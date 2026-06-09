@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Phone, Mail, MapPin, ArrowUpRight, MessageCircle } from "lucide-react";
+import { Phone, Mail, MapPin, ArrowUpRight } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -40,17 +40,7 @@ export default function Footer() {
               Powering homes, businesses, and industries across Telangana with premium solar systems, professional installation, and 5 years of free service support.
             </p>
 
-            <div className="flex items-center gap-3 pt-2">
-              <a
-                href="https://wa.me/919014249898?text=Hi!"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-emerald-500/10 hover:bg-emerald-500 text-emerald-400 hover:text-white transition-all flex items-center justify-center"
-                aria-label="WhatsApp Link"
-              >
-                <MessageCircle className="w-5 h-5 fill-current" />
-              </a>
-            </div>
+
           </div>
 
           {/* Quick Links */}

@@ -167,7 +167,7 @@ export default function LeadPopup() {
                 </span>
                 <input
                   type="text"
-                  placeholder="Please type your Place"
+                  placeholder="Please type your place"
                   value={formData.city}
                   onChange={(e) => setFormData({ ...formData, city: e.target.value })}
                   className={`w-full pl-10 pr-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-solar-orange focus:outline-none transition-all text-sm ${errors.city ? "border-red-500 bg-red-50" : "border-slate-200"
