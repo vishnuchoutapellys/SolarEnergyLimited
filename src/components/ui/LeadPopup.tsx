@@ -128,9 +128,8 @@ export default function LeadPopup() {
                   placeholder="Enter your full name"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className={`w-full pl-10 pr-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-solar-orange focus:outline-none transition-all text-sm ${
-                    errors.name ? "border-red-500 bg-red-50" : "border-slate-200"
-                  }`}
+                  className={`w-full pl-10 pr-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-solar-orange focus:outline-none transition-all text-sm ${errors.name ? "border-red-500 bg-red-50" : "border-slate-200"
+                    }`}
                 />
               </div>
               {errors.name && <p className="text-xs text-red-500 mt-1">{errors.name}</p>}
@@ -150,9 +149,8 @@ export default function LeadPopup() {
                   placeholder="10-digit mobile number"
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  className={`w-full pl-10 pr-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-solar-orange focus:outline-none transition-all text-sm ${
-                    errors.phone ? "border-red-500 bg-red-50" : "border-slate-200"
-                  }`}
+                  className={`w-full pl-10 pr-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-solar-orange focus:outline-none transition-all text-sm ${errors.phone ? "border-red-500 bg-red-50" : "border-slate-200"
+                    }`}
                 />
               </div>
               {errors.phone && <p className="text-xs text-red-500 mt-1">{errors.phone}</p>}
@@ -169,12 +167,11 @@ export default function LeadPopup() {
                 </span>
                 <input
                   type="text"
-                  placeholder="e.g., Korutla, Jagityal"
+                  placeholder="Please type your Place"
                   value={formData.city}
                   onChange={(e) => setFormData({ ...formData, city: e.target.value })}
-                  className={`w-full pl-10 pr-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-solar-orange focus:outline-none transition-all text-sm ${
-                    errors.city ? "border-red-500 bg-red-50" : "border-slate-200"
-                  }`}
+                  className={`w-full pl-10 pr-4 py-2.5 border rounded-lg focus:ring-2 focus:ring-solar-orange focus:outline-none transition-all text-sm ${errors.city ? "border-red-500 bg-red-50" : "border-slate-200"
+                    }`}
                 />
               </div>
               {errors.city && <p className="text-xs text-red-500 mt-1">{errors.city}</p>}
