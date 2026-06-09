@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 import { Award, Zap, Smile, ShieldCheck } from "lucide-react";
 
 const statsList = [
-  { icon: Zap,         number: "1,200+", label: "kW Installed",       description: "Clean solar energy deployed" },
-  { icon: Award,       number: "500+",   label: "Projects Completed",  description: "Residential & commercial rooftops" },
-  { icon: Smile,       number: "100%",   label: "Happy Customers",     description: "5-star rated support & maintenance" },
-  { icon: ShieldCheck, number: "25 Yrs", label: "Panel Warranty",      description: "Guaranteed long-term performance" },
+  { icon: Zap, number: "1,200+", label: "kW Installed", description: "Clean solar energy deployed" },
+  { icon: Award, number: "500+", label: "Projects Completed", description: "Residential & commercial rooftops" },
+  { icon: Smile, number: "100%", label: "Happy Customers", description: "5-star rated support & maintenance" },
+  { icon: ShieldCheck, number: "25 Yrs", label: "Panel Warranty", description: "Guaranteed long-term performance" },
 ];
 
 const containerVariants = {
@@ -23,7 +23,7 @@ const itemVariants = {
 export default function Stats() {
   return (
     /* Full-width transparent wrapper so only the card is visible — no phantom second white box */
-    <section id="stats" className="relative z-20 w-full -mt-8 sm:-mt-12 lg:-mt-16 px-4 sm:px-6 lg:px-8">
+    <section id="stats" className="relative z-20 w-full -mt-8 sm:-mt-12 lg:-mt-16">
       <div className="max-w-7xl mx-auto">
         <motion.div
           variants={containerVariants}
