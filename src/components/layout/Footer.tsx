@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Phone, Mail, MapPin, ArrowUpRight, MessageCircle } from "lucide-react";
+import { Phone, Mail, MapPin, ArrowUpRight } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -12,7 +12,7 @@ export default function Footer() {
     <footer className="bg-solar-blue-dark text-slate-300 pt-10 md:pt-16 pb-6 md:pb-8 border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        {/* Top footer details */}
+        {/* Top footer details  are added*/}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-8 md:mb-12">
 
           {/* Company branding */}
@@ -40,17 +40,7 @@ export default function Footer() {
               Powering homes, businesses, and industries across Telangana with premium solar systems, professional installation, and 5 years of free service support.
             </p>
 
-            <div className="flex items-center gap-3 pt-2">
-              <a
-                href="https://wa.me/919014249898?text=Hi!"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-emerald-500/10 hover:bg-emerald-500 text-emerald-400 hover:text-white transition-all flex items-center justify-center"
-                aria-label="WhatsApp Link"
-              >
-                <MessageCircle className="w-5 h-5 fill-current" />
-              </a>
-            </div>
+
           </div>
 
           {/* Quick Links */}
