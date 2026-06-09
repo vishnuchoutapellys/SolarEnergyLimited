@@ -12,7 +12,7 @@ export default function Footer() {
     <footer className="bg-solar-blue-dark text-slate-300 pt-10 md:pt-16 pb-6 md:pb-8 border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        {/* Top footer details */}
+        {/* Top footer details  are added*/}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-8 md:mb-12">
 
           {/* Company branding */}
