@@ -25,7 +25,7 @@ export default function GalleryPage() {
       </section>
 
       {/* Render filterable gallery */}
-      <Gallery />
+      <Gallery showHeader={false} />
 
       {/* Trust Callout Banner */}
       <section className="py-20 bg-slate-50 border-t border-slate-100">
