@@ -5,7 +5,11 @@ import Image from "next/image";
 import { Plus, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
-export default function Gallery() {
+interface GalleryProps {
+  showHeader?: boolean;
+}
+
+export default function Gallery({ showHeader = true }: GalleryProps) {
   const [activeFilter, setActiveFilter] = useState("all");
   const [activeImage, setActiveImage] = useState<string | null>(null);
 
@@ -19,10 +23,10 @@ export default function Gallery() {
   const galleryItems = [
     {
       id: 1,
-      title: "3kW Residential Solar Panel",
+      title: "8kW Residential Solar Panel",
       location: "Korutla, Jagityal",
       category: "residential",
-      image: "/images/customer1.jpg",
+      image: "/images/customer13_8kw.jpg",
     },
     {
       id: 2,
@@ -129,6 +133,13 @@ export default function Gallery() {
       category: "residential",
       image: "/images/customer11_5kw.jpg",
     },
+    {
+      id: 17,
+      title: "3kW Residential Solar Panel",
+      location: "Jagtial Road",
+      category: "residential",
+      image: "/images/customer1.jpg",
+    },
   ];
 
   const filteredItems = activeFilter === "all"
@@ -140,17 +151,19 @@ export default function Gallery() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          <span className="text-solar-orange font-bold text-xs uppercase tracking-widest bg-solar-orange/10 px-3.5 py-1.5 rounded-full">
-            Our Happy Customer's
-          </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-solar-blue font-heading tracking-tight mt-4">
-            Recent Project Gallery
-          </h2>
-          <p className="text-slate-600 mt-4 leading-relaxed font-medium">
-            Explore our real-world rooftop solar installations across Telangana, showcasing clean structural builds and high quality standards.
-          </p>
-        </div>
+        {showHeader && (
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <span className="text-solar-orange font-bold text-xs uppercase tracking-widest bg-solar-orange/10 px-3.5 py-1.5 rounded-full">
+              Our Happy Customer's
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-solar-blue font-heading tracking-tight mt-4">
+              Recent Project Gallery
+            </h2>
+            <p className="text-slate-600 mt-4 leading-relaxed font-medium">
+              Explore our real-world rooftop solar installations across Telangana, showcasing clean structural builds and high quality standards.
+            </p>
+          </div>
+        )}
 
         {/* Filters Tabs */}
         <div className="flex flex-wrap justify-center gap-3 mb-12">
@@ -159,8 +172,8 @@ export default function Gallery() {
               key={filter.id}
               onClick={() => setActiveFilter(filter.id)}
               className={`py-2 px-5 text-xs font-bold rounded-full border transition-all cursor-pointer ${activeFilter === filter.id
-                  ? "bg-solar-blue border-solar-blue text-white shadow-md shadow-blue-500/10"
-                  : "bg-slate-50 border-slate-200 text-slate-600 hover:bg-slate-100"
+                ? "bg-solar-blue border-solar-blue text-white shadow-md shadow-blue-500/10"
+                : "bg-slate-50 border-slate-200 text-slate-600 hover:bg-slate-100"
                 }`}
             >
               {filter.name}
