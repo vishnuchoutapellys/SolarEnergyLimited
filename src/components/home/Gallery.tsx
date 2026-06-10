@@ -10,7 +10,7 @@ interface GalleryProps {
 }
 
 export default function Gallery({ showHeader = true }: GalleryProps) {
-  const [activeFilter, setActiveFilter] = useState("all");
+  const [activeFilter, setActiveFilter] = useState("residential");
   const [activeImage, setActiveImage] = useState<string | null>(null);
 
   const filters = [
