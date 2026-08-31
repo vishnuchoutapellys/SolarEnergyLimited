@@ -5,7 +5,7 @@ import ContactForm from "@/components/ui/ContactForm";
 import { Phone, Mail, MapPin, Clock, MessageSquare } from "lucide-react";
 
 export default function Contact() {
-  const whatsappUrl = "https://wa.me/919014249898?text=Hi!%20I'm%20interested%20in%20a%20solar%20installation%20for%20my%20property.%20Please%20provide%20more%20information.";
+  const whatsappUrl = "https://wa.me/919666551104?text=Hi!%20I'm%20interested%20in%20a%20solar%20installation%20for%20my%20property.%20Please%20provide%20more%20information.";
 
   // Safe Google Maps Embed URL for Korutla location
   const mapEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.207901768407!2d78.7107775!3d18.8228399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ccd144d188339ab%3A0xc6cb1c4995c73bb1!2sKorutla%2C%20Telangana%20505326!5e0!3m2!1sen!2sin!4v1780645000000!5m2!1sen!2sin";
@@ -68,8 +68,8 @@ export default function Contact() {
                 <div>
                   <h3 className="font-bold text-sm text-slate-900 font-heading">Phone Numbers</h3>
                   <p className="text-xs text-slate-500 leading-relaxed mt-1 font-medium">
-                    <a href="tel:+919014249898" className="hover:text-solar-orange transition-colors">
-                      +91 9014249898
+                    <a href="tel:+919666551104" className="hover:text-solar-orange transition-colors">
+                      +91 9666551104
                     </a> (Direct Call / WhatsApp)
                   </p>
                 </div>

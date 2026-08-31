@@ -48,8 +48,8 @@ export default function Navbar() {
       {/* ── Navbar Header ── */}
       <header
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled
-            ? "bg-white/95 backdrop-blur-md shadow-lg py-2 text-slate-800"
-            : "bg-transparent py-4 text-white"
+          ? "bg-white/95 backdrop-blur-md shadow-lg py-2 text-slate-800"
+          : "bg-transparent py-4 text-white"
           }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -88,10 +88,10 @@ export default function Navbar() {
                     key={link.name}
                     href={link.path}
                     className={`text-xs lg:text-sm font-semibold transition-all duration-300 hover:text-solar-orange relative py-1 shrink-0 ${isActive
-                        ? "text-solar-orange"
-                        : isScrolled
-                          ? "text-slate-700 hover:text-solar-orange"
-                          : "text-white/90 hover:text-white"
+                      ? "text-solar-orange"
+                      : isScrolled
+                        ? "text-slate-700 hover:text-solar-orange"
+                        : "text-white/90 hover:text-white"
                       }`}
                   >
                     {link.name}
@@ -106,15 +106,15 @@ export default function Navbar() {
             {/* Action CTAs (Desktop / Tablet) */}
             <div className="hidden md:flex items-center gap-3 lg:gap-4 shrink-0">
               <a
-                href="tel:+919014249898"
+                href="tel:+919666551104"
                 className={`flex items-center gap-2 text-xs lg:text-sm font-bold transition-all duration-300 ${isScrolled ? "text-solar-blue hover:text-solar-blue-light" : "text-white hover:text-slate-200"
                   }`}
               >
                 <div className="w-8 h-8 rounded-full bg-solar-orange/10 flex items-center justify-center text-solar-orange shrink-0 hover:scale-105 transition-transform">
                   <Phone className="w-4 h-4 fill-solar-orange text-solar-orange" />
                 </div>
-                <span className="hidden xl:inline">+91 9014249898</span>
-                <span className="hidden lg:inline xl:hidden text-xs">+91 9014249898</span>
+                <span className="hidden xl:inline">+91 9666551104</span>
+                <span className="hidden lg:inline xl:hidden text-xs">+91 9666551104</span>
               </a>
 
               <Link
@@ -128,7 +128,7 @@ export default function Navbar() {
             {/* Mobile Actions (Phone & Hamburger) */}
             <div className="flex items-center gap-2.5 md:hidden">
               <a
-                href="tel:+919014249898"
+                href="tel:+919666551104"
                 className="flex items-center justify-center w-9 h-9 rounded-full bg-solar-orange/10 text-solar-orange hover:scale-105 active:scale-95 transition-transform"
                 aria-label="Call Rudraa Solar"
               >
@@ -195,8 +195,8 @@ export default function Navbar() {
                   key={link.name}
                   href={link.path}
                   className={`text-sm font-bold py-3 px-3 rounded-lg flex items-center justify-between transition-all ${isActive
-                      ? "bg-solar-orange/10 text-solar-orange"
-                      : "text-slate-800 hover:bg-slate-50"
+                    ? "bg-solar-orange/10 text-solar-orange"
+                    : "text-slate-800 hover:bg-slate-50"
                     }`}
                 >
                   {link.name}
@@ -210,15 +210,15 @@ export default function Navbar() {
         {/* CTAs — pinned to bottom of panel */}
         <div className="px-6 py-5 border-t border-slate-100 space-y-3 shrink-0">
           <a
-            href="tel:+919014249898"
+            href="tel:+919666551104"
             className="w-full flex items-center justify-center gap-2.5 border border-solar-blue text-solar-blue font-bold py-2.5 rounded-xl hover:bg-slate-50 transition-all text-sm"
           >
             <Phone className="w-4 h-4 fill-solar-blue text-solar-blue" />
-            Call +91 9014249898
+            Call +91 9666551104
           </a>
 
           <a
-            href="https://wa.me/919014249898?text=Hi!%20I'm%20interested%20in%20a%20solar%20installation%20for%20my%20property."
+            href="https://wa.me/919666551104?text=Hi!%20I'm%20interested%20in%20a%20solar%20installation%20for%20my%20property."
             target="_blank"
             rel="noopener noreferrer"
             className="w-full flex items-center justify-center gap-2.5 bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-2.5 rounded-xl transition-all text-sm"

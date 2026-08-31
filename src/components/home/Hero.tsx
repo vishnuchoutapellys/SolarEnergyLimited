@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   const whatsappUrl =
-    "https://wa.me/919014249898?text=Hi!%20I'm%20interested%20in%20a%20solar%20installation%20for%20my%20property.%20Please%20provide%20more%20information.";
+    "https://wa.me/919666551104?text=Hi!%20I'm%20interested%20in%20a%20solar%20installation%20for%20my%20property.%20Please%20provide%20more%20information.";
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-solar-blue-dark">
