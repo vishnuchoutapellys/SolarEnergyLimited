@@ -5,7 +5,7 @@ export const localBusinessSchema = {
   "image": "https://rudrasolarenergy.com/Logo1.png", // Fallback URL
   "@id": "https://rudrasolarenergy.com/#organization",
   "url": "https://rudrasolarenergy.com",
-  "telephone": "+919014249898",
+  "telephone": "+919666551104",
   "email": "rudraasolarpowerpvtltd@gmail.com",
   "address": {
     "@type": "PostalAddress",

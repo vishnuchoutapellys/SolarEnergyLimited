@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { User, Phone, Mail, MapPin, MessageSquare, Send } from "lucide-react";
 import { event } from "@/lib/analytics";
 
-const WHATSAPP_NUMBER = "919014249898";
+const WHATSAPP_NUMBER = "919666551104";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({

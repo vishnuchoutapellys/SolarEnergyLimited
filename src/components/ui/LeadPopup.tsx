@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { X, Phone, User, MapPin, Send } from "lucide-react";
 import { event } from "@/lib/analytics";
 
-const WHATSAPP_NUMBER = "919014249898";
+const WHATSAPP_NUMBER = "919666551104";
 
 export default function LeadPopup() {
   const [isOpen, setIsOpen] = useState(false);
